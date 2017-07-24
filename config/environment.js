@@ -1,6 +1,6 @@
 /* eslint-env node */
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   var ENV = {
     modulePrefix: 'dev-link',
     environment: environment,
@@ -15,6 +15,15 @@ module.exports = function(environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
       }
+    },
+
+    firebase: {
+      apiKey: "AIzaSyAI3whnyeMc3C4XHOdYuknBoqhcruMf-X4",
+      authDomain: "dev-link.firebaseapp.com",
+      databaseURL: "https://dev-link.firebaseio.com",
+      projectId: "dev-link",
+      storageBucket: "dev-link.appspot.com",
+      messagingSenderId: "133273036314"
     },
 
     APP: {
