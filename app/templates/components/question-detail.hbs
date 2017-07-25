@@ -1,0 +1,14 @@
+{{question.author}}
+
+{{question.quiz}}
+{{question.content}}
+{{question.additionalContent}}
+
+<h2>Answers for this question</h2>
+
+
+    {{#each question.answers as |answer|}}
+        {{answer-tile answer=answer destroyAnswer="destroyAnswer" like='like' dislike='dislike'}}
+    {{/each}}
+
+<button {{action 'delete' question}} >delete question</button>

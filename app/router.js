@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('forum');
   this.route('developer');
   this.route('developer-detail');
+  this.route('question', {path: '/question/:question_id'});
 });
 
 export default Router;
