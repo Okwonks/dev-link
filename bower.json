@@ -1,0 +1,20 @@
+{
+  "name": "dev-link",
+  "description": "Small description for dev-link goes here",
+  "main": "",
+  "authors": [
+    "David Kahara <kaharadave@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/d-kahara/dev-link",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "0.97.6"
+  }
+}
