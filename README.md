@@ -2,7 +2,7 @@
 ![alt text](http://i.imgur.com/SPfj2iP.png)
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+### Devlink links these programmers together, it also acts as a platform of keeping up with the latest technology in the market.
 
 ## Prerequisites
 
