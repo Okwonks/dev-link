@@ -3,10 +3,10 @@
   "description": "Small description for dev-link goes here",
   "main": "",
   "authors": [
-    "David Kahara <kaharadave@gmail.com>"
+    "Okwonks <albertoketch@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/d-kahara/dev-link",
+  "homepage": "https://github.com/Okwonks/dev-link",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,5 +16,8 @@
   ],
   "dependencies": {
     "materialize": "0.97.6"
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1"
   }
 }

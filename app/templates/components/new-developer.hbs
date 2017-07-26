@@ -1,0 +1,120 @@
+ {{#if newDeveloper}} 
+<div>
+    <form class="col s6">
+        <div class="row">
+            <div class="input-field col s3">
+                {{input id="first_name" type="text" class="validate" value=firstName}}
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s3">
+                {{input id="last_name" type="text" class="validate" value=lastName}}
+                <label for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s3">
+                {{input id="email" type="email" class="validate" value=email}}
+                <label for="email">Email</label>
+            </div>
+
+            <div class="input-field col s3">
+                {{input id="github" type="text" class="validate" value=github}}
+                <label for="github_name">GitHub User Name</label>
+            </div>
+        </div>
+        <button class="btn waves-effect waves-light" type="submit" {{action 'saveDeveloper'}} name="action">Submit <i class="material-icons right">send</i></button>
+        <button class="btn waves-effect waves-light" {{action 'cancelFrom'}}>Cancel</button>
+    </form>
+</div>
+<br>
+<br>
+{{else}}    
+<div class="container">
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large blue" href="#modal1" {{action 'showDeveloperForm'}}><i class="large material-icons">mode_edit</i></a>
+        <ul>
+            <li><a class="waves-effect waves-light btn modal-trigger btn-floating red"><i class="material-icons">publish</i></a></li>
+        </ul>
+    </div>
+</div>
+{{/if}}   
+{{!-- 
+<!-- Modal Trigger -->
+
+<!-- Modal Structure -->
+ <div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Sign Up</h4>
+
+        <!-- This is the form that handles the sign-up functionality for the developers -->
+
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        {{input id="first_name" type="text" class="validate"}}
+                        <label for="first_name">First Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        {{input id="last_name" type="text" class="validate"}}
+                        <label for="last_name">Last Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        {{input id="email" type="email" class="validate"}}
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-field col s6">
+                        {{input id="github_name" type="text" class="validate"}}
+                        <label for="github_name">GitHub User Name</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" {{action 'saveDeveloper'}} class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+    </div>
+</div>   --}}
+
+
+{{!-- {{#if modalIsOpen}}
+{{#md-modal close='closeModal' class="modal"}}
+<div class="modal-content">
+    <h4>Sign Up</h4>
+
+    <!-- This is the form that handles the sign-up functionality for the developers -->
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    {{input id="first_name" type="text" class="validate"}}
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="input-field col s6">
+                    {{input id="last_name" type="text" class="validate"}}
+                    <label for="last_name">Last Name</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    {{input id="email" type="email" class="validate"}}
+                    <label for="email">Email</label>
+                </div>
+
+                <div class="input-field col s6">
+                    {{input id="github_name" type="text" class="validate"}}
+                    <label for="github_name">GitHub User Name</label>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="modal-footer">
+    <a href="#!" {{action 'saveDeveloper'}} class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+</div>
+{{/md-modal}}
+{{/if}} --}}
