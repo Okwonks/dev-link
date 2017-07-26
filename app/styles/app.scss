@@ -5,8 +5,51 @@ $roboto-font-path: '../assets/';
 @import "materialize";
 
 body{
-    background: #3a7bd5;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #3a6073, #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #C0C0C0;
+}
+.card-content a{
+    color: #fff
+}
+.banner-home{
+    padding: 5%;
+    background: url('http://i.imgur.com/0GjsRvO.jpg');
+    background-position: center center;
+    background-size: cover;
+    color: #F1F1F1;
+    background-attachment: fixed;
+}
+nav{
+    background: #DBE3E2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2F4358, #DBE3E2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2F4358, #DBE3E2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h2{
+    color: #FFF
+}
+.parallx{
+    padding: 5%;
+    color: #FFF;
+}
+.cust-badge{
+    background: #b2dfdb;
+    padding: 5px;
+    color: #222;
+    border-radius: 10%;
+    text-decoration: bold;
+}
+div.card-container {
+    -moz-column-width: 23rem;
+    -webkit-column-width: 23rem;
+    -moz-column-gap: 1rem;
+    -webkit-column-gap: 1rem;
+}
 
+.card {
+    display: inline-block;
+    width:  100%;
+}
+.img-dimensions{
+    height: 250px;
+    width: 150px;
 }
