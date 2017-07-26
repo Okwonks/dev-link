@@ -1,0 +1,78 @@
+<header class="header parallx center">
+  <h3>Here we vote for our fav langs</h3>
+  <p>Vote according to:</p>
+  <div class="row center">
+    <div class="col m4">
+      <h4>Ease of learning</h4>
+      <p></p>
+    </div>
+    <div class="col m4">
+      <h4>Ease of Understanding</h4>
+      <p></p>
+    </div>
+    <div class="col m4">
+      <h4>Ease of Development</h4>
+      <p></p>
+    </div>
+    <div class="col m4">
+      <h4>Support/ community</h4>
+      <p></p>
+    </div>
+    <div class="col m4">
+      <h4>Platform</h4>
+      <p></p>
+    </div>
+    <div class="col m4">
+      <h4>Portability</h4>
+      <p></p>
+    </div>
+  </div>
+</header>
+<div class="row">
+  {{#each model as |language|}}
+
+  <div class="col m4">
+    <div class="card">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="img-dimensions" src="{{language.image}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"> {{language.name}} <i class="material-icons right">more_vert</i></span>
+        <p><a href="#">Link To {{language.shortName}} resources</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{language.shortName}}<i class="material-icons right">close</i></span>
+        <p>{{language.description}}</p> <hr>
+        <p class="center">Year: {{language.year}}</p>
+        <div class="row">
+            <div class="col m4">
+                {{language.rank}}
+            </div>
+            <div class="col m4">
+                {{language.likes}}
+            </div>
+            <div class="col m4">
+                {{language.dislikes}}
+            </div>
+        </div>
+        <div class="row">
+          <div class="col m4">
+            <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">remove</i></a>
+          </div>
+          <div class="col m4">
+            <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">add</i></a>
+          </div>
+          <div class="col m4">
+            <a class="btn-floating btn-small waves-effect waves-light red"><i class="material-icons">grade</i></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col m12">
+            <p>All results will be tallied and posted weekly on our blog.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
