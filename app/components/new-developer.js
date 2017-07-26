@@ -30,8 +30,4 @@ export default Ember.Component.extend({
       this.sendAction('saveDeveloper', params);
     }
   }
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> d2b9ac79051ffdb4bca3be3da0f7ce72c7ab3e28
