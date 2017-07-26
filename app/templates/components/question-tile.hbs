@@ -1,14 +1,23 @@
-<div class="s4">
-    <div class="card horizontal">
-        <div class="card-stacked">
-            <div class="card-content">
-               {{#link-to 'question' question.id}} {{question.author}} {{/link-to}}
+
+    <div class="card blue-grey darken-3">
+            {{#link-to 'question' question.id}}
+            <div class="card-content white-text">
+                <div class="center">
+                {{question.author}} 
+                </div>
+                <p> {{question.quiz}} </p>
             </div>
-            <div class="card-action">
-                <a href="">view more about the question</a>
-                    <button class="btn waves-effect waves-light" {{action 'like' question}} >like</button> {{question.likes}}
-                    <button class="btn waves-effect waves-light" {{action 'dislike' question}} >dislike</button>   {{question.dislikes}}  
+            {{/link-to}}
+            <div class="">
+                <div class="row center">
+                <div class="col m6">
+                <a class="btn-floating btn-small waves-effect waves-light red" {{action 'like' question}} ><i class="material-icons">add</i></a>
+                  <span class="cust-badge">{{question.likes}}</span>
+                </div>
+                  <div class="col m6">
+                <a class="btn-floating btn-small waves-effect waves-light red"  {{action 'dislike' question}}  ><i class="material-icons">remove</i></a>
+                <span class="cust-badge">{{question.dislikes}}</span>
+                  </div>                    
+                </div>
             </div>
-        </div>
     </div>
-</div>

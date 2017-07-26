@@ -1,3 +1,10 @@
+<div class="card-panel">
+    
+    <div class="center">
+     <img src="http://i.imgur.com/iLWQrBo.png" alt="">        
+    </div>
+</div>
+
 {{question.author}}
 
 {{question.quiz}}
@@ -6,9 +13,11 @@
 
 <h2>Answers for this question</h2>
 
-
+<div class="row">
     {{#each question.answers as |answer|}}
         {{answer-tile answer=answer destroyAnswer="destroyAnswer" like='like' dislike='dislike'}}
     {{/each}}
+</div>
+
 
 <button {{action 'delete' question}} >delete question</button>
