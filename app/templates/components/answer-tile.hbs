@@ -1,10 +1,10 @@
 <ul class="collection">
-    <li class="collection-item avatar">
+    <li class="collection-item avatar grey">
         <i class="material-icons circle">ac_unit</i>
         <span class="title">{{answer.author}} says:</span>
-        <p>{{answer.subject}}</p> <br>
-        <p>{{answer.content}}</p>
-        <button {{action 'delete' answer}} >del</button>
+        {{answer.subject}}
+        {{answer.content}}
+        <button  class="btn" {{action 'delete' answer}} >del</button>
         <button {{action 'like' answer}} >like {{answer.likes}}</button> 
         <button {{action 'dislike' answer}} >dislike{{answer.dislikes}}</button>
         <button class="btn secondary-content" > <i class="material-icons">star_border</i></button>
