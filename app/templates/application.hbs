@@ -1,19 +1,25 @@
-  <nav>
-    <div class="nav-wrapper">
-      <a href="/" class="brand-logo"> <img src="http://i.imgur.com/iLWQrBo.png" alt=""></a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
-      </ul>
-    </div>
-  </nav>
-        
+<div class="navbar-fixed"> <!-- this will give the navbar the fixed property -->
+    <nav>
+        <div class="nav-wrapper">
+            {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li>{{#link-to 'about'}}About{{/link-to}}</li>
+                <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+                <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+            </ul>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </nav>
+</div> 
 <header class="header center-align banner-home">
     <img src="http://i.imgur.com/iLWQrBo.png" alt="">
     <h1>Devs Unite!</h1>
     <button class="btn">Join the Movement</button>
 </header>
 <div class="container">
-{{outlet}}
+
 </div>

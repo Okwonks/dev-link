@@ -1,5 +1,19 @@
 {
   "name": "dev-link",
+  "description": "Small description for dev-link goes here",
+  "main": "",
+  "authors": [
+    "Okwonks <albertoketch@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Okwonks/dev-link",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
   "dependencies": {
     "materialize": "0.97.6"
   },
