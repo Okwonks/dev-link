@@ -5,6 +5,9 @@ module.exports = function (environment) {
     modulePrefix: 'dev-link',
     environment: environment,
     rootURL: '/',
+    sassOptions: {
+    includePaths: ['bower_components/materialize/sass']
+  },
     locationType: 'auto',
     EmberENV: {
       FEATURES: {
@@ -38,6 +41,8 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.myApiKey = process.env.apiKey;
+
   }
 
   if (environment === 'test') {

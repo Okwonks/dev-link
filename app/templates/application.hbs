@@ -1,21 +1,48 @@
-<div class="navbar-fixed"> <!-- this will give the navbar the fixed property -->
-    <nav>
-        <div class="nav-wrapper">
-            {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li>{{#link-to 'about'}}About{{/link-to}}</li>
-                <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
-                <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </nav>
+<div class="navbar-fixed">
+  <!-- this will give the navbar the fixed property -->
+  <nav>
+    <div class="nav-wrapper">
+      {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </nav>
 </div>
 
 <div class="container">
-    {{outlet}}
+  {{outlet}}
 </div>
+
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Dev Link</h5>
+        <p class="grey-text text-lighten-4"></p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Developer</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Blog</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2017 Devlink
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+    </div>
+  </div>
+</footer>
