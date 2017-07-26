@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('developer');
   this.route('developer-detail');
   this.route('question', {path: '/question/:question_id'});
+  this.route('languages');
 });
 
 export default Router;
