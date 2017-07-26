@@ -2,24 +2,24 @@
 $roboto-font-path: '../assets/';
 // Materialize styles
 @import "materialize";
-body {
-  background: #3a7bd5;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3a6073, #3a7bd5);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// body {
+//   background: #3a7bd5;
+//   /* fallback for old browsers */
+//   background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
+//   /* Chrome 10-25, Safari 5.1-6 */
+//   background: linear-gradient(to right, #3a6073, #3a7bd5);
+//   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
+.banner-home {
+  padding: 5%;
+  background-image: url('http://i.imgur.com/0GjsRvO.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-attachment: fixed;
+  height: 700px;
 }
 
-.banner-home{
-   padding: 5%;
-   background-image: url('http://i.imgur.com/0GjsRvO.jpg');
-   background-position: center center;
-   background-size: cover;
-   background-color:rgba(0, 0, 0, 0.3);
-   background-attachment: fixed;
-   height: 700px;
-}
 nav {
   background: #159957;
   /* fallback for old browsers */
@@ -27,4 +27,14 @@ nav {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #155799, #159957);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgba(0, 0, 0, 0.3);
 }
