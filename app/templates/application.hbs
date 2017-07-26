@@ -1,7 +1,7 @@
 <div class="navbar-fixed"> <!-- this will give the navbar the fixed property -->
     <nav>
         <div class="nav-wrapper">
-            {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
+            {{#link-to 'index' class="brand-logo center"}} <img src="http://i.imgur.com/rG21AQM.png" alt="">{{/link-to}}
             <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li>{{#link-to 'about'}}About{{/link-to}}</li>
                 <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
@@ -21,5 +21,5 @@
     <button class="btn">Join the Movement</button>
 </header>
 <div class="container">
-
+{{outlet}}
 </div>
