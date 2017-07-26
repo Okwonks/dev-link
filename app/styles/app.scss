@@ -1,59 +1,23 @@
 // Fix for Roboto font path
 $roboto-font-path: '../assets/';
 // Materialize styles
+// @import 'components/variables';
 @import "materialize";
-body {
-  background: #3a7bd5;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3a6073, #3a7bd5);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+@import 'ember-cli-materialize';
+@import "ember-routable-modal/core";
+@import "ember-routable-modal/dialog";
 
-body{
-    background: #C0C0C0;
-}
-.card-content a{
-    color: #fff
-}
+// styling for the landing page on index
 .banner-home{
-    padding: 5%;
-    background: url('http://i.imgur.com/0GjsRvO.jpg');
-    background-position: center center;
-    background-size: cover;
-    color: #F1F1F1;
-    background-attachment: fixed;
-}
-h2{
-    color: #FFF
-}
-.parallx{
-    padding: 5%;
-    color: #FFF;
-}
-.cust-badge{
-    background: #b2dfdb;
-    padding: 5px;
-    color: #222;
-    border-radius: 10%;
-    text-decoration: bold;
-}
-div.card-container {
-    -moz-column-width: 23rem;
-    -webkit-column-width: 23rem;
-    -moz-column-gap: 1rem;
-    -webkit-column-gap: 1rem;
+   padding: 10%;
+   background-image: url('http://i.imgur.com/0GjsRvO.jpg');
+   background-position: center center;
+   background-size: cover;
+   background-color:rgba(0, 0, 0, 0.3);
+   background-attachment: fixed;
+   height: 730px;
 }
 
-.card {
-    display: inline-block;
-    width:  100%;
-}
-.img-dimensions{
-    height: 250px;
-    width: 150px;
-}
 nav {
   background: #159957;
   /* fallback for old browsers */
@@ -61,4 +25,51 @@ nav {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #155799, #159957);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// footer {
+//   background: #000;
+//   background: linear-gradient(to right, #9d9d9d, #000);
+// }
+
+.devlink-repo {
+  max-height: 325px;
+}
+.card{
+    margin-top: 50px;
+}
+
+.card-image{
+ height:100% ;   
+}
+
+.card-content {
+padding-top:1%;
+margin-top: 0;
+}
+
+body {
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+// developer index styling
+.second {
+   
+   padding: 3%;
+   height: 500px;
+}
+// question index styling 
+.third {
+   padding: 5%;
+   background-image: url('http://i.imgur.com/83KiFkV.png');
+   background-position: center center;
+   background-size: cover;
+   background-color:rgba(0, 0, 0, 0.3);
+   background-attachment: fixed;
+   height: 760px;
 }

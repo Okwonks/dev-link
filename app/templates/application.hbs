@@ -1,26 +1,51 @@
-<div class="navbar-fixed"> <!-- this will give the navbar the fixed property -->
-    <nav>
-        <div class="nav-wrapper">
-            {{#link-to 'index' class="brand-logo center"}} <img src="http://i.imgur.com/rG21AQM.png" alt="">{{/link-to}}
-            <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li>{{#link-to 'about'}}About{{/link-to}}</li>
-                <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
-                <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
-                <li>{{#link-to 'languages'}}Languages{{/link-to}}</li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-    </nav>
-</div> 
-<header class="header center-align banner-home">
-    <img src="http://i.imgur.com/iLWQrBo.png" alt="">
-    <h1>Devs Unite!</h1>
-    <button class="btn">Join the Movement</button>
-</header>
-<div class="container">
-{{outlet}}
+<div class="navbar-fixed">
+  <!-- this will give the navbar the fixed property -->
+  <nav>
+    <div class="nav-wrapper">
+      {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </nav>
 </div>
+
+<div class="container-fluid">
+  {{outlet}}
+</div>
+<br>
+<br>
+<div class="container"><hr></div>
+
+
+{{!-- <footer class="page-footer"> --}}
+  {{!-- <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Dev Link</h5>
+        <p class="grey-text text-lighten-4"></p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li>{{#link-to 'index'}}Home{{/link-to}}</li>
+          <li>{{#link-to 'developer'}}Developer{{/link-to}}</li>
+          <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+          <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+        </ul>
+      </div>
+    </div>
+  </div> --}}
+  {{!-- <div class="footer-copyright"> --}}
+    <div class="container center-align">
+      © 2017 <a href="https://github.com/Okwonks/dev-link">Devlink</a>
+    </div>
+  {{!-- </div> --}}
+{{!-- </footer> --}}

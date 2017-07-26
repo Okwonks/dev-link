@@ -5,7 +5,19 @@ module.exports = function (environment) {
     modulePrefix: 'dev-link',
     environment: environment,
     rootURL: '/',
+    sassOptions: {
+      includePaths: ['bower_components/materialize/sass']
+    },
     locationType: 'auto',
+    materializeDefaults: {
+      // modalIsFooterFixed: false,
+      buttonIconPosition: 'left',
+      loaderSize: 'big',
+      loaderMode: 'indeterminate',
+      modalContainerId: 'materialize-modal-root-element',
+      dropdownInDuration: 300,
+      dropdownOutDuration: 300
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
@@ -38,6 +50,8 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.myApiKey = process.env.apiKey;
+
   }
 
   if (environment === 'test') {
