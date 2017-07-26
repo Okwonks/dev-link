@@ -1,0 +1,8 @@
+.banner-home{
+   padding: 5%;
+   background: url('http://i.imgur.com/0GjsRvO.jpg');
+   background-position: center center;
+   background-size: cover;
+   color: #F1F1F1 ;
+   background-attachment: fixed;
+}
