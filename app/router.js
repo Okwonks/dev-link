@@ -12,6 +12,7 @@ Router.map(function() {
   this.route('forum');
   this.route('developer');
   this.route('developer-detail');
+  this.route('example');
 });
 
 export default Router;
