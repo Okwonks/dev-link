@@ -3,3 +3,21 @@ $roboto-font-path: '../assets/';
 
 // Materialize styles
 @import "materialize";
+
+.banner-home{
+   padding: 5%;
+   background-image: url('http://i.imgur.com/0GjsRvO.jpg');
+   background-position: center center;
+   background-size: cover;
+   background-color:rgba(0, 0, 0, 0.3);
+   background-attachment: fixed;
+   height: 700px;
+}
+nav {
+  background: #159957;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #155799, #159957);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #155799, #159957);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
