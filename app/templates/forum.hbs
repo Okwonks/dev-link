@@ -1,14 +1,57 @@
 <header class="header">
-<h2 class="center">Devlink forum here</h2>
+<h2 class="center">Devs Forum:</h2>
 </header>
 
- <div class="container">
+<header class="header grey lighten-2 parallx">
+    <div class="center">
+        <h2 class="">How it works!</h2>
+        <div class="row ">
+            <div class="col m4">
+                <img src="http://i.imgur.com/1Y3TuNW.png" alt="">
+                        <div class="">
+                            <h4>Ask a Question.</h4>
+          <span class="">
+              Helpful developers are here to answer your questions with love.
+          </span>
+        </div>
+            </div>
+            <div class="col m4">
+                <img src="http://i.imgur.com/1Y3TuNW.png" alt="">
+                        <div class="">
+                            <h4>Get relevant Answers.</h4>
+          <span class="">
+              Get relevant answers and directions to your questions and concerns.
+          </span>
+        </div>
+            </div>
+            <div class="col m4">
+                <img src="http://i.imgur.com/7NaSnDP.png" alt="">
+                        <div class="">
+                            <h4>Get online help.</h4>
+          <span class="">
+              Dev forum brings experts of various fields together in one spot.
+          </span>
+        </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="row">
  {{#each model.questions as |question|}} 
-    {{question-tile question=question like='like' dislike='dislike'}}
- {{/each}} 
- </div>
-
-<div class="card-panel">
-{{new-question saveQuestion2='saveQuestion3'}}
-
+    <div class="col m4">
+        {{question-tile question=question like='like' dislike='dislike'}}
+    </div>
+    {{/each}}
 </div>
+
+<div class="card-panel center">
+{{new-question saveQuestion2='saveQuestion3'}}
+</div>
+<div class="center">
+     <img src="http://i.imgur.com/iLWQrBo.png" alt="">
+</div>
+  <div class="progress">
+      <div class="determinate" style="width: 100%"></div>
+  </div>
+        
