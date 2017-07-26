@@ -6,9 +6,18 @@ module.exports = function (environment) {
     environment: environment,
     rootURL: '/',
     sassOptions: {
-    includePaths: ['bower_components/materialize/sass']
-  },
+      includePaths: ['bower_components/materialize/sass']
+    },
     locationType: 'auto',
+    materializeDefaults: {
+      // modalIsFooterFixed: false,
+      buttonIconPosition: 'left',
+      loaderSize: 'big',
+      loaderMode: 'indeterminate',
+      modalContainerId: 'materialize-modal-root-element',
+      dropdownInDuration: 300,
+      dropdownOutDuration: 300
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build
