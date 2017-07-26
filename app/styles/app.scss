@@ -1,23 +1,21 @@
 // Fix for Roboto font path
 $roboto-font-path: '../assets/';
 // Materialize styles
+// @import 'components/variables';
 @import "materialize";
-// body {
-//   background: #3a7bd5;
-//   /* fallback for old browsers */
-//   background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
-//   /* Chrome 10-25, Safari 5.1-6 */
-//   background: linear-gradient(to right, #3a6073, #3a7bd5);
-//   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-// }
-.banner-home {
-  padding: 5%;
-  background-image: url('http://i.imgur.com/0GjsRvO.jpg');
-  background-position: center center;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-attachment: fixed;
-  height: 700px;
+@import 'ember-cli-materialize';
+@import "ember-routable-modal/core";
+@import "ember-routable-modal/dialog";
+
+// styling for the landing page on index
+.banner-home{
+   padding: 10%;
+   background-image: url('http://i.imgur.com/0GjsRvO.jpg');
+   background-position: center center;
+   background-size: cover;
+   background-color:rgba(0, 0, 0, 0.3);
+   background-attachment: fixed;
+   height: 730px;
 }
 
 nav {
@@ -27,6 +25,28 @@ nav {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #155799, #159957);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+// footer {
+//   background: #000;
+//   background: linear-gradient(to right, #9d9d9d, #000);
+// }
+
+.devlink-repo {
+  max-height: 325px;
+}
+.card{
+    margin-top: 50px;
+}
+
+.card-image{
+ height:100% ;   
+}
+
+.card-content {
+padding-top:1%;
+margin-top: 0;
 }
 
 body {
@@ -36,5 +56,22 @@ body {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #155799, #159957);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color:rgba(0, 0, 0, 0.3);
+}
+
+// developer index styling
+.second {
+   
+   padding: 3%;
+   height: 500px;
+}
+// question index styling 
+.third {
+   padding: 5%;
+   background-image: url('http://i.imgur.com/83KiFkV.png');
+   background-position: center center;
+   background-size: cover;
+   background-color:rgba(0, 0, 0, 0.3);
+   background-attachment: fixed;
+   height: 760px;
 }
