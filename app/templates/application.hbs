@@ -1,4 +1,22 @@
-<div class="container">
+<div class="container-fluid">
+  <div class="navbar-fixed">
+  <!-- this will give the navbar the fixed property -->
+  <nav>
+    <div class="nav-wrapper">
+      {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+      </ul>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </nav>
+</div>
   {{outlet}}
   </div>
   <footer class="page-footer">
