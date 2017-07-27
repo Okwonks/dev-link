@@ -8,11 +8,16 @@ export default Ember.Component.extend({
         },
         saveQuestion1(){
             var params = {
-                author: this.get('author'),
-                quiz: this.get('quiz'),
-                content: this.get('content'),
-                additionalContent: this.get('additionalContent')
+                author: this.get('author') ? this.get('author') : "Jon Doe",
+                quiz: this.get('quiz') ? this.get('quiz') : "What's the meaning of Stone Henge?",
+                content: this.get('content') ? this.get('content') : "This is a question I ask because I just really need to know the answer.",
+                additionalContent: this.get('additionalContent') ? this.get('additionalContent') : "Say something..."
             };
+            this.set('author', '');
+            this.set('quiz', '');
+            this.set('content', '');
+            this.set('additionalContent', '');
+            
             this.set('addNewQuestion', true);
             this.sendAction('saveQuestion2', params);
         }
