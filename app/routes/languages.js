@@ -9,7 +9,7 @@ export default Ember.Route.extend({
     actions: {
         upvote(language){
             var currentUpvotes = language.get('likes');
-            var totalUpvotes = (currentUpvotes+=1);
+            var totalUpvotes = (currentUpvotes += 1);
             language.setProperties({
                 likes: totalUpvotes
             });
