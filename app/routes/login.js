@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  
   actions: {
     login: function() {
       var controller = this.get('controller');
@@ -12,7 +11,6 @@ export default Ember.Route.extend({
              email: email,
              password: password
         }).then(function() {
-
             this.transitionTo('protected');
         }.bind(this));
     }
