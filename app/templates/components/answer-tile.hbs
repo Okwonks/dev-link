@@ -1,12 +1,11 @@
 <ul class="collection">
-    <li class="collection-item avatar grey">
+    <li class="collection-item avatar teal darken-2">
         <i class="material-icons circle">ac_unit</i>
         <span class="title">{{answer.author}} says:</span>
-        {{answer.subject}}
-        {{answer.content}}
-        <button  class="btn" {{action 'delete' answer}} >del</button>
-        <button {{action 'like' answer}} >like {{answer.likes}}</button> 
-        <button {{action 'dislike' answer}} >dislike{{answer.dislikes}}</button>
+        <p>{{answer.subject}} ***
+        {{answer.content}}</p>
+        <button {{action 'like' answer}} class="chip">like {{answer.likes}}</button> 
+        <button {{action 'dislike' answer}} class="chip">dislike{{answer.dislikes}}</button>
         <button class="btn secondary-content" > <i class="material-icons">star_border</i></button>
     </li>
 </ul>

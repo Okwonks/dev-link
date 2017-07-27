@@ -8,11 +8,9 @@ export default Ember.Component.extend({
             }
         },
         like(answer){
-            console.log('like')
             this.sendAction('like', answer)
         },
         dislike(answer){
-            console.log('dislike')
             this.sendAction('dislike', answer)
         }
     }
