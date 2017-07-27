@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DevLink</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>DevLink</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> {{content-for "head"}}
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-  <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-  <link rel="stylesheet" href="{{rootURL}}assets/dev-link.css"> {{content-for "head-footer"}}
-</head>
+    {{content-for "head"}}
 
-<body>
-  {{content-for "body"}}
+    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+    <link rel="stylesheet" href="{{rootURL}}assets/dev-link.css">
 
-  <script src="{{rootURL}}assets/vendor.js"></script>
-  <script src="{{rootURL}}assets/dev-link.js"></script>
+    {{content-for "head-footer"}}
+  </head>
+  <body>
+    {{content-for "body"}}
+
 
   {{content-for "body-footer"}}
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-  
-</body>
+    <script src="{{rootURL}}assets/vendor.js"></script>
+    <script src="{{rootURL}}assets/dev-link.js"></script>
 
+
+    {{content-for "body-footer"}}
+  </body>
 </html>

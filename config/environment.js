@@ -5,10 +5,10 @@ module.exports = function (environment) {
     modulePrefix: 'dev-link',
     environment: environment,
     rootURL: '/',
-    locationType: 'auto',
     sassOptions: {
       includePaths: ['bower_components/materialize/sass']
     },
+    locationType: 'auto',
     materializeDefaults: {
       // modalIsFooterFixed: false,
       buttonIconPosition: 'left',
@@ -50,6 +50,8 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.myApiKey = process.env.apiKey;
+
   }
 
   if (environment === 'test') {

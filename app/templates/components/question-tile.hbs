@@ -1,0 +1,14 @@
+<div class="s4">
+    <div class="card horizontal">
+        <div class="card-stacked">
+            <div class="card-content">
+               {{#link-to 'question' question.id}} {{question.author}} {{/link-to}}
+            </div>
+            <div class="card-action">
+                <a href="">view more about the question</a>
+                    <button class="btn waves-effect waves-light" {{action 'like' question}} >like</button> {{question.likes}}
+                    <button class="btn waves-effect waves-light" {{action 'dislike' question}} >dislike</button>   {{question.dislikes}}  
+            </div>
+        </div>
+    </div>
+</div>
