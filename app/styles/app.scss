@@ -59,11 +59,20 @@ body {
   background-color:rgba(0, 0, 0, 0.3);
 }
 
+h1, h4{
+  color: #fff;
+  text-shadow: 1px 1px 1px #9b9b9b;
+}
+
+h2 {
+  color: #fff;
+}
+
 // developer index styling
 .second {
    
    padding: 3%;
-   height: 500px;
+   height: 30%;
 }
 // question index styling 
 .third {
@@ -73,5 +82,13 @@ body {
    background-size: cover;
    background-color:rgba(0, 0, 0, 0.3);
    background-attachment: fixed;
-   height: 760px;
+   height: 30%;
+}
+
+#dev-container {
+  padding: 3%;
+}
+
+#index-questions {
+  margin-top: 0%;
 }
