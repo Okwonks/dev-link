@@ -15,8 +15,8 @@ module.exports = function (environment) {
       loaderSize: 'big',
       loaderMode: 'indeterminate',
       modalContainerId: 'materialize-modal-root-element',
-      dropdownInDuration: 300,
-      dropdownOutDuration: 300
+      dropdownInDuration: 500,
+      dropdownOutDuration: 500
     },
     EmberENV: {
       FEATURES: {
@@ -37,6 +37,9 @@ module.exports = function (environment) {
       storageBucket: "dev-link.appspot.com",
       messagingSenderId: "133273036314"
     },
+    torii: {
+     sessionServiceName: 'session'
+   },
 
     APP: {
       // Here you can pass flags/options to your application instance

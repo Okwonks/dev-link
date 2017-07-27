@@ -13,7 +13,10 @@ Router.map(function() {
   this.route('developer');
   this.route('developer-detail', {path: '/developer-detail/:developer_id'});
   this.route('question', {path: '/question/:question_id'});
-  this.route('example');
+  this.route('protected');
+  this.route('devDashboard', { path: ':developer_id' });
+  this.route('login');
+  this.route('signup');
 });
 
 export default Router;
