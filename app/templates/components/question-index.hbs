@@ -1,13 +1,14 @@
 <div class="col s3" id="index-questions">
-    <div class="card blue-grey darken-1">
-        <div class="card-stacked">
+    <div class="card blue-grey darken-1" id="question-card-index-height">
+        <div>
             <div class="card-content white-text">
-               <span class="card-title"><h5 id="heading">{{#link-to 'question' question.id}} {{question.author}} {{/link-to}}</h5></span>
-               <h6>{{question.quiz}}</h6>
-               {{!-- <p>{{question.content}}</p> --}}
+                <span class="card-title"><h5 id="heading">{{#link-to 'question' question.id}} {{question.author}} {{/link-to}}</h5></span>
+                <p>{{question.quiz}}</p>
+                {{!--
+                <p>{{question.content}}</p> --}}
             </div>
             <div class="card-action orange-text">
-<p>Likes {{question.likes}} - Dislikes {{question.dislikes}}</p>  
+                <a>Likes {{question.likes}} - Dislikes {{question.dislikes}}</a>
             </div>
         </div>
     </div>
