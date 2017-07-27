@@ -17,6 +17,8 @@ Router.map(function() {
   this.route('devDashboard', { path: ':developer_id' });
   this.route('login');
   this.route('signup');
+  this.route('languages');
+  this.route('blog');
 });
 
 export default Router;

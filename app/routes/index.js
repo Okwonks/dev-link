@@ -8,9 +8,10 @@ export default Ember.Route.extend({
         limitToFirst: 6
       }),
       questions: this.store.query('question', {
-          orderBy: 'author',
-          limitToLast: 4
+        orderBy: 'author',
+        limitToLast: 4
       })
     })
-  }
+  },
+  typedStrings: ["first sentence"]
 });
