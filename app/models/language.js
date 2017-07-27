@@ -8,6 +8,6 @@ export default DS.Model.extend({
     year: DS.attr(),
     linkToResources: DS.attr(),
     image: DS.attr(),
-    likes: DS.attr(),
-    dislikes: DS.attr()
+    likes: DS.attr('number'),
+    dislikes: DS.attr('number')
 });

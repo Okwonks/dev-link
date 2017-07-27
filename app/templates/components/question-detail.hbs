@@ -1,15 +1,19 @@
 <div class="card-panel">
-    
     <div class="center">
      <img src="http://i.imgur.com/iLWQrBo.png" alt="">        
     </div>
 </div>
+<div class="parallx">
+    <div class="center">
+        <h4>{{question.quiz}}</h4>
+        <hr>
+    </div>
 
-{{question.author}}
-
-{{question.quiz}}
-{{question.content}}
-{{question.additionalContent}}
+<div class="chip">{{question.author}}</div> asks: <br>
+<br>    
+<p>{{question.content}}
+{{question.additionalContent}}</p>
+</div>
 
 <h2>Answers for this question</h2>
 
@@ -19,5 +23,6 @@
     {{/each}}
 </div>
 
-
-<button {{action 'delete' question}} >delete question</button>
+<div class="center">
+{{!-- <button {{action 'delete' question}} class="btn red">delete question</button> --}}
+</div>

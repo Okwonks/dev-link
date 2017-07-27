@@ -1,0 +1,51 @@
+<header class="header parallx center blog-image">
+  <h3>Dev-link blog: <small>made for bloggers</small></h3>
+</header>
+<header class="header parallx center">
+    <h2>Dev-link News Feed</h2>
+    <p>News gotten from <a href="https://techcrunch.com/" target="_blank">Tech crunch</a> and <a href="http://thehackernews.com/" target="_blank">Hacker News</a></p>
+</header>
+<div class="container">
+<div class="card-container">
+ {{#each model.tech as |article|}}
+<div class="">
+  <div class="card item">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{article.urlToImage}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"> {{article.title}} <i class="material-icons right">more_vert</i></span>
+      <p><a href="{{article.url}}" target="_blank">Read the article</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"> {{article.title}} <i class="material-icons right">close</i></span>
+      <p> {{article.description}} </p>
+      <p><a href="{{article.url}}" target="_blank" class="right">Read the article</a></p>
+      <p> Author: {{article.author}} </p>
+      <p> Date published: {{article.publishedAt}} </p>
+    </div>
+  </div>
+</div>
+ {{/each}} 
+ {{#each model.crunch as |article|}}
+<div class="">
+  <div class="card item">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="{{article.urlToImage}}">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4"> {{article.title}} <i class="material-icons right">more_vert</i></span>
+      <p><a href="{{article.url}}" target="_blank">Read the article</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"> {{article.title}} <i class="material-icons right">close</i></span>
+      <p> {{article.description}} </p>
+      <p><a href="{{article.url}}" target="_blank" class="right">Read the article</a></p>
+      <p> Author: {{article.author}} </p>
+      <p> Date published: {{article.publishedAt}} </p>
+    </div>
+  </div>
+</div>
+ {{/each}} 
+</div>
+</div>

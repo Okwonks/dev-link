@@ -38,7 +38,6 @@ export default Ember.Route.extend({
         destroyAnswer(answer){
             console.log('question route delete button is working')
             answer.destroyRecord();
-            this.transitionTo('forum');
         },
         like(answer){
             var currentLikes = answer.get('likes');

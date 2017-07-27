@@ -1,6 +1,9 @@
 
-    <div class="card grey lighten-1">
+    <div class="card teal darken-2">
             {{#link-to 'question' question.id}}
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="http://i.imgur.com/Rg4JC8S.jpg">
+    </div>
             <div class="card-content white-text">
                 <div class="center">
                 {{question.author}} 
@@ -11,12 +14,12 @@
             <div class="">
                 <div class="row center">
                 <div class="col m6">
-                <a class="btn-floating btn-small waves-effect waves-light red" {{action 'like' question}} ><i class="material-icons">add</i></a>
-                  <span class="cust-badge">{{question.likes}}</span>
+                <a class="btn-floating btn-small waves-effect waves-light red" {{action 'like' question}} ><i class="material-icons">thumb_up</i></a>
+                  <span class="chip">{{question.likes}}</span>
                 </div>
                   <div class="col m6">
-                <a class="btn-floating btn-small waves-effect waves-light red"  {{action 'dislike' question}}  ><i class="material-icons">remove</i></a>
-                <span class="cust-badge">{{question.dislikes}}</span>
+                <a class="btn-floating btn-small waves-effect waves-light red"  {{action 'dislike' question}}  ><i class="material-icons">thumb_down</i></a>
+                <span class="chip">{{question.dislikes}}</span>
                   </div>                    
                 </div>
             </div>
