@@ -1,9 +1,9 @@
-<div class="page-header">
+<div class="container page-header">
     <h2>Devs</h2>
     <hr>
 </div>
 
-<div class="container">
+<div class="container" id="dev-container">
     <div class="row">
         {{#each model as |developer|}}
             {{developer-tile developer=developer}}
@@ -20,5 +20,5 @@
             </ul>
         </div>
     </div>
-    {{new-developer saveDeveloper="saveDeveloper"}}
+    {{!-- {{new-developer saveDeveloper="saveDeveloper"}} --}}
 </div>
