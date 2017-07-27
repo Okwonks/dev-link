@@ -1,25 +1,23 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function(params){
+  model: function (params) {
     return this.store.find('developer', params.developer_id);
   },
-  updateRentalForm: false,
+  editDevDetails: false,
   actions: {
-    updateRentalForm() {
-      this.set('updateRentalForm', true);
+    editDevDetails() {
+      this.set('editDevDetails', true);
     },
-    update(rental) {
+    saveChanges() {
       var params = {
-        ownwer: this.get('owner'),
-        city: this.get('city'),
-        type: this.get('type'),
-        image: this.get('image'),
-        bedrooms: this.get('bedrooms'),
-        latitude: this.get('latitude'),
-        longitude: this.get('longitude')
+        firstName: this.get('firstName'),
+        lastName: this.get('lastName'),
+        email: this.get('email'),
+        github: this.get('github'),
+        password: this.get('password')
       };
-      this.set('updateRentalForm',false);
+      this.set('editDevDetails', false);
       this.sendAction('update', rental, params);
     }
   }
