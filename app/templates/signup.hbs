@@ -1,0 +1,29 @@
+<form class="col s6">
+  <div class="row">
+    <div class="input-field col s3">
+      {{input id="first_name" type="text" class="validate" value=firstName}}
+      <label for="first_name">First Name</label>
+    </div>
+    <div class="input-field col s3">
+      {{input id="last_name" type="text" class="validate" value=lastName}}
+      <label for="last_name">Last Name</label>
+    </div>
+  </div>
+  <div class="row">
+    <div class="input-field col s3">
+      {{input id="email" type="email" class="validate" value=email}}
+      <label for="email">Email</label>
+    </div>
+
+    <div class="input-field col s3">
+      {{input id="github" type="text" class="validate" value=github}}
+      <label for="github_name">GitHub User Name</label>
+    </div>
+    <div class="input-field col s3">
+      {{input id="password" type="password" class="validate" value=password}}
+      <label for="github_name">password</label>
+    </div>
+  </div>
+  {{#link-to 'login' signUp='signUp' }}<button class="btn waves-effect waves-light" {{action 'signUp'}} name="action" type="submit">SignUp</button>{{/link-to}}
+  <button class="btn waves-effect waves-light" {{action 'cancelFrom'}}>Cancel</button>
+</form>

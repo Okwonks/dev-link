@@ -9,17 +9,22 @@
         <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        {{#if session.isAuthenticated}}
+        <button class="waves-effect waves-light btn" {{action 'logout'}}>Logout</button>
+        {{/if}}
         <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
-        <li></li>
+        <li>{{#link-to 'signup' signUp=signUp login=login}}Sign-up{{/link-to}}</li>
+        <li>{{#link-to 'login' signUp=signUp login="login"}}Login{{/link-to}}</li>
         <li></li>
       </ul>
     </div>
   </nav>
 </div>
 
-<div class="">
-  {{outlet}}
+<div class="container-fluid">
+    {{outlet}}
 </div>
+{{routable-modal-outlet}}
 <br>
 <br>
 <div class="container"><hr></div>
@@ -44,8 +49,8 @@
     </div>
   </div> --}}
   {{!-- <div class="footer-copyright"> --}}
-    <div class="container center-align">
-      © 2017 <a href="https://github.com/Okwonks/dev-link">Devlink</a>
+    <div class="container center-align white-text">
+      © 2017 <a class="white-text" href="https://github.com/Okwonks/dev-link">Devlink</a>
     </div>
   {{!-- </div> --}}
 {{!-- </footer> --}}

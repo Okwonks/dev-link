@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="center-align">
+    <div class="card-panel teal darken-2">
+      <form class="center">
+        <div class="row center">
+          <div class="input-field col s4 offset-s4">
+            {{input id="email" type="email" class="validate" value=email}}
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row center">
+          <div class="input-field col s4 offset-s4">
+            {{input id="password" type="password" class="validate" value=password}}
+            <label for="password">password</label>
+          </div>
+        </div>
+        <button {{action 'login'}} class="btn green">login</button>
+      </form>
+    </div>
+  </div>
+</div>
