@@ -6,6 +6,9 @@ export default Ember.Route.extend({
            this.get('session').close().then(function() {
                this.transitionTo('application');
            }.bind(this));
-       }
+       },
+        mobile(){
+            Ember.$(".button-collapse").sideNav();
+        }
    }
 });
