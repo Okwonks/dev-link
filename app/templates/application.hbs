@@ -2,9 +2,10 @@
   <!-- this will give the navbar the fixed property -->
   <nav>
     <div class="nav-wrapper">
-      {{#link-to 'index' class="brand-logo center"}}Logo{{/link-to}}
-       <a href="#" data-activates="mobile-demo" class="button-collapse" {{action 'mobile'}} ><i class="material-icons">menu</i></a>
+      {{#link-to 'index' class="brand-logo center"}}<img src="http://i.imgur.com/rG21AQM.png" alt="Dev-Link">{{/link-to}}
+      <a href="#" data-activates="mobile-demo" class="button-collapse" {{action 'mobile'}}><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li>{{#link-to 'index'}}<i class="material-icons">home</i>{{/link-to}}</li>
         <li>{{#link-to 'about'}}About{{/link-to}}</li>
         <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
         <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
@@ -12,8 +13,20 @@
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         {{#if session.isAuthenticated}}
-        <button class="waves-effect waves-light btn" {{action 'logout'}}>Logout</button>
-        {{/if}}
+        <button class="waves-effect waves-light btn" {{action 'logout'}}>Logout</button> {{/if}}
+        <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
+        <li>{{#link-to 'languages'}}Languages{{/link-to}}</li>
+        <li>{{#link-to 'signup' signUp=signUp login=login}}Sign-up{{/link-to}}</li>
+        <li>{{#link-to 'login' signUp=signUp login="login"}}Login{{/link-to}}</li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li>{{#link-to 'index'}}<i class="material-icons">home</i>{{/link-to}}</li>
+        <li>{{#link-to 'about'}}About{{/link-to}}</li>
+        <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+        <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
+        <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
+        {{#if session.isAuthenticated}}
+        <button class="waves-effect waves-light btn" {{action 'logout'}}>Logout</button> {{/if}}
         <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
         <li>{{#link-to 'languages'}}Languages{{/link-to}}</li>
         <li>{{#link-to 'signup' signUp=signUp login=login}}Sign-up{{/link-to}}</li>
@@ -30,16 +43,19 @@
 </div>
 
 <div class="container-fluid">
-    {{outlet}}
+  {{outlet}}
 </div>
 {{routable-modal-outlet}}
 <br>
 <br>
-<div class="container"><hr></div>
+<div class="container">
+  <hr>
+</div>
 
 
-{{!-- <footer class="page-footer"> --}}
-  {{!-- <div class="container">
+{{!--
+<footer class="page-footer"> --}} {{!--
+  <div class="container">
     <div class="row">
       <div class="col l6 s12">
         <h5 class="white-text">Dev Link</h5>
@@ -55,10 +71,9 @@
         </ul>
       </div>
     </div>
-  </div> --}}
-  {{!-- <div class="footer-copyright"> --}}
+  </div> --}} {{!--
+  <div class="footer-copyright"> --}}
     <div class="container center-align white-text">
       © 2017 <a class="white-text" href="https://github.com/Okwonks/dev-link">Devlink</a>
     </div>
-  {{!-- </div> --}}
-{{!-- </footer> --}}
+    {{!-- </div> --}} {{!-- </footer> --}}
