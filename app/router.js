@@ -6,15 +6,15 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
-Router.map(function() {
+Router.map(function () {
   this.route('about');
   this.route('contact');
   this.route('forum');
   this.route('developer');
-  this.route('developer-detail', {path: '/developer-detail/:developer_id'});
-  this.route('question', {path: '/question/:question_id'});
+  this.route('developer-detail', { path: '/developer-detail/:developer_id' });
+  this.route('question', { path: '/question/:question_id' });
   this.route('protected');
-  this.route('devDashboard', { path: ':developer_id' });
+  this.route('dev-dashboard', { path: '/dev-dashboard/:developer_id' });
   this.route('login');
   this.route('signup');
 });
