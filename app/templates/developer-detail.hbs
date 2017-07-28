@@ -1,6 +1,6 @@
 <div class="row">
   {{#if showClicked}}
-{{#each reposs as |repo|}}
+{{#each model as |repo|}}
   <div class="col m4">
     <div class="card devlink-repo blue-grey darken-1">
       <div class="card-content white-text">
@@ -28,4 +28,4 @@
 {{model.github}}
 <button {{action "getRepos" model}}>View Repos</button>
 {{/if}}
-</div>
+</div> 
