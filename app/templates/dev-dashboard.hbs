@@ -1,25 +1,31 @@
-<p>
-    Hello {{model.lastName}}
-</p>
+ 
+
 <div class="container">
-    <div class="col s12 m7">
-        <h2 class="header">Developer Details</h2>
-        <div class="card large horizontal">
-            <div class="card-image">
-                <img> {{edit-developer saveChanges="saveChanges"}}
+    <div class="row">
+        <h3 class="center-align">
+    Hello {{model.firstName}}  {{model.lastName}}, welcome to your dash board.
+</h3> 
+        <div class="col s6 offset-s3 ">
+            <div class="card">
+                <div class="card-image">
+                    <img src={{model.image}}>
+                    <span class="card-title">Developer Details</span>
 
+                </div>
+                <div class="card-content dev">
+                    <ul>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">verified_user</i> Full Name: {{model.firstName}} {{model.lastName}}</p>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">link</i> Github User Name: {{model.github}}</p>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">email</i> Email: {{model.email}}</p>
 
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <div id="edit">
-                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a></div>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">person</i> Bio: {{model.bio}}</p>
+                    </ul>
                 </div>
             </div>
+
         </div>
+    </div>
+    <div class="col s6 offset-s3">
+        {{edit-developer saveChanges="saveChanges"}}
     </div>
 </div>
