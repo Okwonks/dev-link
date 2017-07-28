@@ -25,7 +25,6 @@ export default Ember.Component.extend({
       this.set('lastName', '');
       this.set('email', '');
       this.set('github', '');
-      
       this.set('newDeveloper', false);
       this.sendAction('saveDeveloper', params);
     }

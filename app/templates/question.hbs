@@ -1,9 +1,10 @@
-<h2>more information about {{model.author}}'s question </h2>
-
-
+<div class="container">
+    <header class="header parallx">
+        <h4>more information about {{model.author}}'s question </h4>
+    </header>
+    <div class="center">
 {{update-question question=model update='update'}}
-
+    </div>
 {{question-detail question=model destroyQuestion='destroyQuestion' destroyAnswer="destroyAnswer" like='like' dislike='dislike'}}
-
-
 {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>
