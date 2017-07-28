@@ -1,31 +1,29 @@
+<div class="page-header">
+  {{model.developer.firstName}}
+</div>
 <div class="row">
-  {{#if showClicked}}
-{{#each reposs as |repo|}}
-  <div class="col m4">
-    <div class="card devlink-repo blue-grey darken-1">
-      <div class="card-content white-text">
-        <span class="card-title">  <strong>{{repo.name}}</strong>:</span> <hr>
-        <div class='center'>
-          <div class=' '>
-           {{repo.description}}
+  {{#each model.repos as |rep|}}
+    <div class="col m4">
+      <div class="card devlink-repo blue-grey darken-1">
+        <div class="card-content white-text">
+          <span class="card-title">  <strong>{{rep.name}}</strong>:</span> <hr>
+          <div class='center'>
+            <div class=' '>
+             {{rep.description}}
+            </div>
           </div>
-        </div>
-          <div class='row'>
-          <div class='col m6'>
-            <a href='{{repo.html_url}}' target='_blank' class='btn btn-info'>Repo</a>
-          </div>
-          <div class='col m6'>
-            <span class="new badge blue">Forks: {{repo.forks_count}}</span><br>
-            <span class="new badge red">Watchers: {{repo.watchers_count}}</span><br>
-            <span class="new badge green">Stars: {{repo.stargazers_count}}</span><br>
+            <div class='row'>
+            <div class='col m6'>
+              <a href='{{rep.html_url}}' target='_blank' class='btn btn-info'>Repo</a>
+            </div>
+            <div class='col m6'>
+              <span class="new badge blue">Forks: {{rep.forks_count}}</span><br>
+              <span class="new badge red">Watchers: {{rep.watchers_count}}</span><br>
+              <span class="new badge green">Stars: {{rep.stargazers_count}}</span><br>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-{{/each}}
-{{else}}
-{{model.github}}
-<button {{action "getRepos" model}}>View Repos</button>
-{{/if}}
+  {{/each}}
 </div>
