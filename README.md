@@ -10,7 +10,7 @@ This README outlines the details of collaborating on this Ember application.
 
 You will need the following things properly installed on your computer.
 
-* [Git](https://git-scm.com/)
+* [Git](https://git-scmhttps://opensource.org/licenses/MITchanger.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
 * [PhantomJS](http://phantomjs.org/)

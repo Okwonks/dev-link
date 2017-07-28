@@ -17,6 +17,11 @@
         </div>
 
         <div class="input-field col s3">
+            {{textarea input id="bio" type="text" class="validate" value=lastName row="3"}}
+            <label for="last_name">Bio</label>
+        </div>
+
+        <div class="input-field col s3">
             {{input id="github" type="text" class="validate" value=github}}
             <label for="github_name">GitHub User Name</label>
         </div>
@@ -24,10 +29,7 @@
             {{input id="password" type="password" class="validate" value=password}}
             <label for="github_name">password</label>
         </div>
-        <div class="input-field col s3">
-            {{textarea input id="bio" type="text" class="validate" value=lastName row="3"}}
-            <label for="last_name">Bio</label>
-        </div>
+
     </div>
     <button class="btn waves-effect waves-light" type="submit" {{action 'saveChanges'}} name="action">Submit <i class="material-icons right">send</i></button>
     <button class="btn waves-effect waves-light" type="submit" {{action 'cancel'}} name="action">Cancel <i class="material-icons right">cancel</i></button>

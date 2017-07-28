@@ -1,6 +1,8 @@
+<div class="container">
 <div class="page-header">
-  {{model.developer.firstName}}
+  <h3>{{model.developer.firstName}}'s Repo's</h3>
 </div>
+<hr>
 <div class="row">
   {{#each model.repos as |rep|}}
     <div class="col m4">
@@ -26,4 +28,5 @@
       </div>
     </div>
   {{/each}}
+</div>
 </div>
