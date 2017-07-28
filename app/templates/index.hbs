@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <header class="header center-align banner-home">
-        <h1>Devs</h1>
+        <h1>Devs:  {{typed-string strings=typedStrings}}</h1>
         {{#link-to 'signup' signUp='signUp' login=login}}<button class="btn">Join the Movement</button>{{/link-to}}
     </header>
     <div class="container second">
@@ -58,11 +58,38 @@
             <div class="col s1.5" data-spy="affix">
 
             </div> --}}
+            {{#each model.developers as |developer|}}
+                {{developer-tile developer=developer}}
+            {{/each}}
+            {{#link-to 'developer'}}<button class="btn waves-effect waves-light">View more Devs</button>{{/link-to}}
         </div>
     </div>
     <div class="container-fluid">
         <div class="row third">
-            <div class="col s3">
+            <div class="page-header">
+                <h2>Forum</h2>
+                <hr>
+            </div>
+             {{#each model.questions as |question|}}
+                {{question-index question=question like='like' dislike='dislike'}}
+            {{/each}}
+
+             <div class="row">
+                <div class="col s3">
+                    <div class="card blue-grey darken-1" id="ask-card-hover">
+                        <div class="card-content white-text">
+                            <span class="card-title">Any questios you would like to Ask?</span>
+                            <h6>Drop us a question, answers will come as well.</h6>
+                        </div>
+                    
+                        <div class="card-action center">
+                            {{#link-to 'forum' class="btn"}}Ask us{{/link-to}}
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            {{!-- <div class="col s3">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
                         <span class="card-title">Card Title</span>
@@ -74,7 +101,7 @@
                         <a href="#">This is a link</a>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

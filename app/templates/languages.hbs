@@ -1,0 +1,77 @@
+<header class="header parallx center">
+  <h3>Here we vote for our favorite languages</h3>
+  <p>Vote according to:</p>
+  <div class="row center">
+    <div class="col m4">
+      <h4>Ease of learning</h4>
+      <p>The easier that the programming language is to learn, the quicker that programmers become productive. Java is a lot easier to learn than C++; C is probably even easier.</p>
+    </div>
+    <div class="col m4">
+      <h4>Ease of Understanding</h4>
+      <p>Most code is written once and read many times—usually, to focus on a particular point (for instance, to fix a bug). Thus, it is important that the reader quickly grasp the essence of what’s happening.</p>
+    </div>
+    <div class="col m4">
+      <h4>Ease of Development</h4>
+      <p>If you look at speed of development in the round, you must consider not only how long it takes you to write code, but also how long it takes you to find a solution to the problem at hand and find the bugs.</p>
+    </div>
+    <div class="col m4">
+      <h4>Support/ community</h4>
+      <p>The skills of the programmers. Programmers are much more productive when they are working in a language that they know well, instead of working in a new language or on a new platform.</p>
+    </div>
+    <div class="col m4">
+      <h4>Platform</h4>
+      <p>By platform environment, I mean not only the operating-system facilities, but also the middleware facilities, database facilities, and system-management facilities.</p>
+    </div>
+    <div class="col m4">
+      <h4>Portability</h4>
+      <p>Most popular languages have been standardized by a nonvendor organization. The aim is twofold: to reduce retraining needs and enhance portability. However, portability has been found to be very difficult.</p>
+    </div>
+  </div>
+</header>
+<div class="container"> 
+<div class="row">
+  {{#each model as |language|}}
+
+  <div class="col m4">
+    <div class="card item">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="img-dimensions" src="{{language.image}}">
+      </div>
+      <div class="card-content">
+        <span class="card-title activator grey-text text-darken-4"> {{language.name}} <i class="material-icons right">more_vert</i></span>
+
+    <div class="card-vote">
+        <div class="row center">
+            <div class="col m6 s12">
+                <div class="chip">{{language.likes}}</div>
+            </div>
+            <div class="col m6 s12">
+                <div class="chip">{{language.dislikes}}</div>
+            </div>
+        </div>
+        <div class="row center">
+          <div class="col m6 s12">
+            <button class="btn-floating btn-small waves-effect waves-light green" {{action 'upvote' language}} ><i class="material-icons">thumb_up</i></button>
+          </div>
+          <div class="col m6 s12">
+            <button class="btn-floating btn-small waves-effect waves-light red" {{action 'downvote' language}} ><i class="material-icons">thumb_down</i></button>
+          </div>
+        </div>
+    </div>
+        <p><a href="#">Link To {{language.shortName}} resources</a></p>
+      </div>
+      <div class="card-reveal">
+        <span class="card-title grey-text text-darken-4">{{language.shortName}}<i class="material-icons right">close</i></span>
+        <p>{{language.description}}</p> <hr>
+        <p class="center">Year: {{language.year}}</p>
+        <div class="row">
+          <div class="col m12">
+            <p>All results will be tallied and posted weekly on our blog.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/each}}
+</div>
+</div>
