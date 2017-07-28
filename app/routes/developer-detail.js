@@ -17,7 +17,7 @@ export default Ember.Route.extend({
      console.log(url);
      return Ember.$.getJSON(url).then(function(reposs){
         reposs.forEach(function(repos) {
-          console.log(repos.name);
+          console.log(repos.username);
           return repos
   });
      })
