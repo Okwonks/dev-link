@@ -1,25 +1,26 @@
+ {{!--
 <p>
     Hello {{model.lastName}}
-</p>
+</p> --}}
 <div class="container">
-    <div class="col s12 m7">
-        <h2 class="header">Developer Details</h2>
-        <div class="card large horizontal">
-            <div class="card-image">
-                <img> {{edit-developer saveChanges="saveChanges"}}
-
-
-            </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.</p>
+    <div class="row">
+        <div class="col s6 offset-s3 ">
+            <div class="card">
+                <div class="card-image">
+                    <img src="https://lh3.googleusercontent.com/4WCKUQLd9wNeXg6_ggscBCasfjbb79Sgx8CfHtGbzhSmLtAGNF-dyva0kKIbw0gj5b4JSJ0wB4keZ3HAbJpea7GZCYENQYxEPbXKzCGz4UT5tiInz4q96Nh5fN1boTmUAhcjyLxWNikhm5_v2KCYT88bzSwui15zs1NobT9x_xqSIXq0ZpwJPWEjOpulIFluiFPalykK5rmY0iBGzWyjfqRpSJoLV7miu9fXB6zlohVWccx4RXINAg2JZdhYAEQBCuXD_8Pn9gSzR4LdP1rRe5G-7-_SUl1kquoPnoqZZIc-5jexK1Tp2C079C3fZ8NFnRyLjGSMDeWyM_YcgPdraAiN9KBuWuKat9N3PXnkwWxM_dnn547rBZ_H1ByCRjfzRnNXFbMJp02n8iwVq4DOZIx4HQU7aIP4vd0B6Pty9ABzf9aPOXn7KzqvsuNTR91-Gdo_rQ1bbJcfdyaobu4_AcrdHaAl3lKcXq8kThvF4so1p36iP-wMuTHwJYIQhdBuIlYtPWEyCNcLSadgJT5irIDZm9KIZPyF_0oino6--4Y8PGfFDiLo2iqK2FkLl4gqLzX2PTU0jorg85DEaaUVQZuxaC89ReVtQM_AxSxG-gZiVJ9BKH79YmGwsg=w1161-h653-no">                    {{edit-developer saveChanges="saveChanges"}}
+                    <span class="card-title">Card Title</span>
+                    <div id="edit" class="responsive nowrap">
+                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light red responsive"><i class="material-icons">add</i></a></div>
                 </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <div id="edit">
-                        <a class="btn-floating btn-large halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a></div>
+                <div class="card-content dev">
+                    <ul>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">verified_user</i> Full Name:</p>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">link</i> Github User Name:</p>
+                        <p style="font-size:20px;"><i class="material-icons" id="icon">email</i> Email: </p>
+                    </ul>
                 </div>
             </div>
         </div>
+
     </div>
 </div>
