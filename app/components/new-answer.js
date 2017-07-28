@@ -7,7 +7,6 @@ export default Ember.Component.extend({
             this.set('addNewAnswer', true);
         },
         saveAnswer(){
-            console.log('getting data');
             var params = {
                 author: this.get('author'),
                 subject: this.get('subject'),

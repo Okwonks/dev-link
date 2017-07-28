@@ -11,15 +11,12 @@ export default Ember.Component.extend({
         },
         destroyAnswer(answer){
             this.sendAction('destroyAnswer', answer);
-            console.log('components delete button is working')
         },
         like(answer){
             this.sendAction('like', answer)
-            console.log('components like button is working')
         },
         dislike(answer){
             this.sendAction('dislike', answer)
-            console.log('components  dislike is working')
         }
     }
 });
