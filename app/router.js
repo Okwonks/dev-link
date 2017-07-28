@@ -19,6 +19,8 @@ Router.map(function () {
   this.route('signup');
   this.route('languages');
   this.route('blog');
+
+
 });
 
 export default Router;
