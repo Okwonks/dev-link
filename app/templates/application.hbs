@@ -9,8 +9,8 @@
         <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        {{#if session.isAuthenticated}}<button {{action 'logout'}}>Logout</button>
-        <a class="waves-effect waves-light btn" {{action 'logout'}}><i class="material-icons right">cancel</i>button</a>
+        {{#if session.isAuthenticated}}
+        <button class="waves-effect waves-light btn" {{action 'logout'}}>Logout</button>
         {{/if}}
         <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
         <li>{{#link-to 'signup' signUp=signUp login=login}}Sign-up{{/link-to}}</li>
