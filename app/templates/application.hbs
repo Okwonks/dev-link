@@ -6,6 +6,7 @@
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <li>{{#link-to 'about'}}About{{/link-to}}</li>
         <li>{{#link-to 'forum'}}Forum{{/link-to}}</li>
+        <li>{{#link-to 'blog'}}Blog{{/link-to}}</li>
         <li>{{#link-to 'contact'}}Contact Us{{/link-to}}</li>
       </ul>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -13,9 +14,9 @@
         <button class="waves-effect waves-light btn" {{action 'logout'}}>Logout</button>
         {{/if}}
         <li>{{#link-to 'developer'}}Developers{{/link-to}}</li>
+        <li>{{#link-to 'languages'}}Languages{{/link-to}}</li>
         <li>{{#link-to 'signup' signUp=signUp login=login}}Sign-up{{/link-to}}</li>
         <li>{{#link-to 'login' signUp=signUp login="login"}}Login{{/link-to}}</li>
-        <li></li>
       </ul>
     </div>
   </nav>
