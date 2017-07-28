@@ -8,6 +8,8 @@ actions: {
       var controller = this.get('controller');
       var firstName = controller.firstName;
       var lastName = controller.lastName;
+      var image = controller.image;
+      var bio = controller.bio;
       var email = controller.email;
       var password = controller.password;
       var github = controller.github;
@@ -18,6 +20,8 @@ actions: {
       id: userData.uid,
       firstName: firstName,
       lastName: lastName,
+      image: image,
+      bio: bio,
       email: email,
       github:github
       });
