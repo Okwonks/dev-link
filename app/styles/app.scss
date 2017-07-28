@@ -376,3 +376,7 @@ div.card-container {
 #edit {
   margin-left: 96%;
 }
+
+#dev-bio {
+  display: none; //hidding the bio so as to send an empty value to firebase.
+}

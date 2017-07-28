@@ -20,6 +20,9 @@ export default Ember.Component.extend({
             
             this.set('addNewQuestion', true);
             this.sendAction('saveQuestion2', params);
+        },
+        cancelQuestion() {
+            this.set('addNewQuestion', true); //this removes the form incase a user would not want to ask a question.
         }
     }
 });
