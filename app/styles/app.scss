@@ -49,24 +49,24 @@ nav {
 }
 
 body {
-  background: #159957;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #155799, #159957);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #155799, #159957);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background-color: rgba(0, 0, 0, 0.3);
+  background: #F1F1F1; //giving the body background a simple styling in order to achieve better UI
+  // background: #159957;
+  // /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to right, #155799, #159957);
+  // /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to right, #155799, #159957);
+  // /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background-color: rgba(0, 0, 0, 0.3);
 }
 
 h1,
 h4 {
-  color: #fff;
   text-shadow: 1px 1px 1px #9b9b9b;
 }
 
-h2 {
-  color: #fff;
-}
+// h2 {
+//   color: #fff;
+// }
 
 // developer index styling
 .second {
@@ -379,4 +379,9 @@ div.card-container {
 
 #dev-bio {
   display: none; //hidding the bio so as to send an empty value to firebase.
+}
+.tile{
+  padding: 3%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
