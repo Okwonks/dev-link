@@ -16,6 +16,9 @@ export default Ember.Component.extend({
             };
             this.set('editDevDetails', false);
             this.sendAction('saveChanges', params);
+        },
+        cancel() {
+            this.set('editDevDetails', false);
         }
     }
 });

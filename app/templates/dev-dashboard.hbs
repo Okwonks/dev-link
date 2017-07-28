@@ -1,15 +1,16 @@
- {{!--
-<p>
-    Hello {{model.lastName}}
-</p> --}}
+ 
+
 <div class="container">
     <div class="row">
+        <h3 class="center-align">
+    Hello {{model.firstName}}  {{model.lastName}}, welcome to your dash board.
+</h3> 
         <div class="col s6 offset-s3 ">
             <div class="card">
                 <div class="card-image">
-                    <img src={{model.image}}>{{edit-developer saveChanges="saveChanges"}}
+                    <img src={{model.image}}>
                     <span class="card-title">Developer Details</span>
-                    
+
                 </div>
                 <div class="card-content dev">
                     <ul>
@@ -23,5 +24,8 @@
             </div>
 
         </div>
+    </div>
+    <div class="col s6 offset-s3">
+        {{edit-developer saveChanges="saveChanges"}}
     </div>
 </div>
