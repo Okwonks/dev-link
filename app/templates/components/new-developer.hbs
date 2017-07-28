@@ -13,6 +13,18 @@
         </div>
         <div class="row">
             <div class="input-field col s3">
+                {{input id="image" type="text" class="validate" value=image}}
+                <label for="image">Image</label>
+            </div>
+        </div>
+        <div class="row" id="dev-bio">
+            <div class="input-field col s3">
+                {{text-area id="bio" type="text" class="validate" value=bio}}
+                <label for="bio">Bio</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s3">
                 {{input id="email" type="email" class="validate" value=email}}
                 <label for="email">Email</label>
             </div>
@@ -38,83 +50,3 @@
     </div>
 </div>
 {{/if}}   
-{{!-- 
-<!-- Modal Trigger -->
-
-<!-- Modal Structure -->
- <div id="modal1" class="modal">
-    <div class="modal-content">
-        <h4>Sign Up</h4>
-
-        <!-- This is the form that handles the sign-up functionality for the developers -->
-
-        <div class="row">
-            <form class="col s12">
-                <div class="row">
-                    <div class="input-field col s6">
-                        {{input id="first_name" type="text" class="validate"}}
-                        <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                        {{input id="last_name" type="text" class="validate"}}
-                        <label for="last_name">Last Name</label>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                        {{input id="email" type="email" class="validate"}}
-                        <label for="email">Email</label>
-                    </div>
-
-                    <div class="input-field col s6">
-                        {{input id="github_name" type="text" class="validate"}}
-                        <label for="github_name">GitHub User Name</label>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="modal-footer">
-        <a href="#!" {{action 'saveDeveloper'}} class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-    </div>
-</div>   --}}
-
-
-{{!-- {{#if modalIsOpen}}
-{{#md-modal close='closeModal' class="modal"}}
-<div class="modal-content">
-    <h4>Sign Up</h4>
-
-    <!-- This is the form that handles the sign-up functionality for the developers -->
-
-    <div class="row">
-        <form class="col s12">
-            <div class="row">
-                <div class="input-field col s6">
-                    {{input id="first_name" type="text" class="validate"}}
-                    <label for="first_name">First Name</label>
-                </div>
-                <div class="input-field col s6">
-                    {{input id="last_name" type="text" class="validate"}}
-                    <label for="last_name">Last Name</label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="input-field col s6">
-                    {{input id="email" type="email" class="validate"}}
-                    <label for="email">Email</label>
-                </div>
-
-                <div class="input-field col s6">
-                    {{input id="github_name" type="text" class="validate"}}
-                    <label for="github_name">GitHub User Name</label>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-<div class="modal-footer">
-    <a href="#!" {{action 'saveDeveloper'}} class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-</div>
-{{/md-modal}}
-{{/if}} --}}

@@ -17,6 +17,8 @@ export default Ember.Component.extend({
       var params = {
         firstName: this.get('firstName') ? this.get('firstName') : "Anonymous", //puttin the code after the question mark allows the field to be left empty.
         lastName: this.get('lastName') ? this.get('lastName') : "Doe",
+        image: this.get('image') ? this.get('image') : "https://dealmarkaz.pk/oc-content/themes/DealMarkaz/images/user-default-profile-pict.jpg",
+        bio: this.get('bio') ? this.get('bio') : "No bio added yet.",
         email: this.get('email') ? this.get('email') : "email@address.com",
         github: this.get('github') ? this.get('github') : "undefined"
       };
@@ -25,6 +27,9 @@ export default Ember.Component.extend({
       this.set('lastName', '');
       this.set('email', '');
       this.set('github', '');
+      this.set('image', '');
+      this.set('bio', '');
+      
       this.set('newDeveloper', false);
       this.sendAction('saveDeveloper', params);
     }
